@@ -4788,13 +4788,13 @@ public class A {
 IOException in Java
 ############
 The IOException is a checked exception in Java, part of the java.io package. It is thrown when an Input/Output operation fails or is interrupted.
-
+ An IO exception occurs when you are unable to create a file. The file is unable to be created. It can happen also because it would have been previously created, and we cannot create this file with the same name. 
 Scenario			Example
 File not found			Reading a file that doesn't exist
 File not readable		Permission denied or locked file
-Network I/O failure		Socket disconnected unexpectedly
-Stream closed unexpectedly	Trying to read from a closed stream
-Writing to a full disk		OutputStream write failure
+Network I/O failure		Socket disconnected unexpectedly  (when the data is present in our computer or somewhere else, and we are trying to connect it, and failure happens, then it is called as IO failure)
+Stream closed unexpectedly	Trying to read from a closed stream (while you are reading a file, the file gets closed abruptly. )_
+Writing to a full disk		OutputStream write failure(when you are writing contents in a file, when the disk is full )
 
 6. list()-
 -------------------
