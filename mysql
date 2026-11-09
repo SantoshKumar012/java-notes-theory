@@ -3291,6 +3291,10 @@ public interface B extends A{
 }
 Output: Output: Error because we are inheriting 1 method to functional interface  and functional interface has a method which totals to 2 methods in an interface
 
+own points related to functional interface 
+-in a functional interface, it should have at least one incomplete method 
+- Functional interface does not inherit more than one method and also, it cannot inherit one method if a functional interface previously has one method in it. 
+
 3. lambdas expression - 
 -------------------------
 -> It was introduced in java 8
@@ -3427,7 +3431,7 @@ abstract public class B{
 	
 }
 package p1;
-public abstract class C extends A,B{//Error
+public abstract class C extends A,B{//Error 
 
 }
 
